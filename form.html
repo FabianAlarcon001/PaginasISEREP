@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Acreditación</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="body-forms">
+    <h2 class="title-forms">Editar Acreditación <span class="acreditacion-title">Hos Persto Refero</span></h2>
+    <form>
+        <div class="form-group">
+            <label for="titulo">Título <span class="required">*</span></label>
+            <input type="text" id="titulo" name="titulo" value="Hos Persto Refero" required>
+        </div>
+
+        <div class="form-group condiciones">
+            <label>Condiciones</label>
+            <div class="condicion-item">
+                <span class="drag-handle">☰</span>
+                <input type="text" value="Profesores (66)">
+                <button type="button" class="btn btn-delete">Eliminar</button>
+            </div>
+            <div class="condicion-item">
+                <span class="drag-handle">☰</span>
+                <input type="text" value="Organización, Administración y Financiación del programa académico. (74)">
+                <button type="button" class="btn btn-delete">Eliminar</button>
+            </div>
+            <div class="condicion-item">
+                <span class="drag-handle">☰</span>
+                <input type="text" value="Estudiantes (65)">
+                <button type="button" class="btn btn-delete">Eliminar</button>
+            </div>
+            <div class="condicion-item">
+                <span class="drag-handle">☰</span>
+                <input type="text" value="">
+                <button type="button" class="btn btn-delete">Eliminar</button>
+            </div>
+            <p class="info-text">Este campo es para las condiciones del programa</p>
+            <button type="button" class="btn btn-add">Añadir otro elemento</button>
+        </div>
+
+        <div class="form-group">
+            <label>Documentos</label>
+            <div class="file-upload">
+                <input type="file" name="documentos[]" multiple>
+                <button type="button" class="btn btn-upload">Subir</button>
+                <div class="file-info">
+                    <p class="info-text">Un número ilimitado de archivos pueden ser cargados en este campo. Límite de 4 GB.</p>
+                    <p class="info-text">Tipos permitidos: docx, doc, pdf, xls, xlsx.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Cuadros Maestros</label>
+            <div class="file-upload">
+                <input type="file" name="cuadros_maestros[]" multiple>
+                <button type="button" class="btn btn-upload">Subir</button>
+                <div class="file-info">
+                    <p class="info-text">Un número ilimitado de archivos pueden ser cargados en este campo. Límite de 4 GB.</p>
+                    <p class="info-text">Tipos permitidos: docx, doc, pdf, xls, xlsx.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Excel Archivos</label>
+            <div class="file-upload">
+                <input type="file" name="excel_archivos[]" multiple>
+                <button type="button" class="btn btn-upload">Subir</button>
+                <div class="file-info">
+                    <p class="info-text">Un número ilimitado de archivos pueden ser cargados en este campo. Límite de 4 GB.</p>
+                    <p class="info-text">Tipos permitidos: docx, doc, pdf, xls, xlsx.</p>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Guardar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,99 @@
+nav {
+    //@include flex-space;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $secondary-color;
+    padding: 20px;
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+  
+      @media (max-width: 768px) {
+          margin: auto;
+      }
+    
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          @include flex-space;
+          
+  
+          @media (max-width: 768px) {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+          }
+  
+          .slide {
+              margin-left: 110px ;
+              padding: 12px;
+  
+              @media (max-width: 1200px) {
+                  margin-left: 0;
+              }
+  
+          }
+  
+          .select-item {
+              color: white;
+              transition: color 0.5s ease;
+          }
+  
+          .select-item:hover{
+              color: #000000;
+          }     
+  
+          a {
+              text-decoration: none;
+              //font-weight: bold;
+              font-size: 15px;
+              transition: color 0.5s ease;
+          }
+  
+          .dropdown-menu {
+              background-color: $secondary-color;
+              color: $primary-color;
+              padding-top: 10%;
+              border: none;
+  
+              .dropdown-item {
+                  color: $primary-color;
+                  transition: color 0,5s none;
+                  transition: background-color 0,5s ease;
+                  text-align: center;
+              }
+          }
+  
+          .dropdown-item:hover{
+              background-color: $secondary-color;
+              color: $tertiary-color;
+              border-radius: 5px;
+          }
+  
+          .dropdown-menu:hover{
+              background-color: $secondary-color;
+              color: #ffffff;
+              border-radius: 5px;
+          }
+  
+      }
+  
+      .search-icon img {
+          margin-right: 70px;
+          height: 30px;
+          width: 30px;
+          transform: scaleX(-1);
+          transition: filter 0.5s ease;
+  
+          @media (max-width: 868px) {
+              margin: 0;
+              height: 20px;
+              width: 20px;
+          }
+      }
+  
+      .search-icon img:hover {
+          filter: brightness(0) invert(1);
+      }
+  }
